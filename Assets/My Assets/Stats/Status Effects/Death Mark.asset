@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e203efa43fc9420f97b5e0072ce8db68, type: 3}
+  m_Name: Death Mark
+  m_EditorClassIdentifier: 
+  m_Data:
+    m_Type: 2
+    m_MaxStack:
+      m_Property:
+        rid: 3403086524422291881
+    m_HasDuration: 1
+    m_IsHidden: 0
+    m_Duration:
+      m_Property:
+        rid: 3403086524422291882
+  m_Info:
+    m_Name:
+      m_Property:
+        rid: 3403086524422291883
+    m_Acronym:
+      m_Property:
+        rid: 3403086524422291884
+    m_Description:
+      m_Property:
+        rid: 3403086524422291885
+    m_Icon:
+      m_Property:
+        rid: 3403086524422291886
+    m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_OnStart:
+    m_Instructions:
+      m_Instructions:
+      - rid: 3403086524422291887
+  m_OnEnd:
+    m_Instructions:
+      m_Instructions:
+      - rid: 3403086524422291890
+  m_WhileActive:
+    m_Instructions:
+      m_Instructions:
+      - rid: 3403086524422291889
+  m_ID:
+    m_Save:
+      m_Save: 0
+    m_UniqueID:
+      m_SerializedID:
+        m_String: StatusEffect-DeathMark
+  references:
+    version: 2
+    RefIds:
+    - rid: 3403086524422291881
+      type: {class: GetDecimalInteger, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 3403086524422291882
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 5
+    - rid: 3403086524422291883
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Status Effect Name
+    - rid: 3403086524422291884
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: SE
+    - rid: 3403086524422291885
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Description...
+    - rid: 3403086524422291886
+      type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086524422291887
+      type: {class: InstructionCommonDebugComment, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Text: Executed right after this Status Effect is applied
+    - rid: 3403086524422291889
+      type: {class: InstructionCommonDebugComment, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Text: Executed over and over again while this Status Effect lasts
+    - rid: 3403086524422291890
+      type: {class: InstructionGameObjectInstantiate, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_GameObject:
+          m_Property:
+            rid: 3403086524422291891
+          usePooling: 1
+          size: 10
+          hasDuration: 1
+          duration: 2
+        m_Position:
+          m_Property:
+            rid: 3403086524422291896
+        m_Rotation:
+          m_Property:
+            rid: 3403086524422291898
+        m_Parent:
+          m_Property:
+            rid: 3403086524422291894
+        m_Save:
+          m_Property:
+            rid: 3403086524422291895
+    - rid: 3403086524422291891
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 8870162469680419728, guid: 76d77d795852443338ae978eed945dc6,
+          type: 3}
+    - rid: 3403086524422291894
+      type: {class: GetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086524422291895
+      type: {class: SetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086524422291896
+      type: {class: GetPositionSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086524422291898
+      type: {class: GetRotationSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Space: 1

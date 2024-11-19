@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f26cda4ed1748bf8db179b546d051bb, type: 3}
+  m_Name: stats.general
+  m_EditorClassIdentifier: 
+  m_Repository:
+    rid: 3403086798924022075
+  references:
+    version: 2
+    RefIds:
+    - rid: 3403086798924022075
+      type: {class: StatsRepository, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_StatusEffects:
+          m_List:
+          - {fileID: 11400000, guid: 3c78d1644b2014618a7a5fab6ed1f540, type: 2}
+          - {fileID: 11400000, guid: 25ffeffe695dd4d9d817ce7f9e8f105d, type: 2}
+          - {fileID: 11400000, guid: 4a587bb48f91843e7aec3b80c605b1e1, type: 2}
+          - {fileID: 11400000, guid: 7d7d4e215343b4e5288e131eeeb136be, type: 2}

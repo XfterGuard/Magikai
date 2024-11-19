@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e203efa43fc9420f97b5e0072ce8db68, type: 3}
+  m_Name: Spirit Spear
+  m_EditorClassIdentifier: 
+  m_Data:
+    m_Type: 1
+    m_MaxStack:
+      m_Property:
+        rid: 3403086774196240384
+    m_HasDuration: 0
+    m_IsHidden: 0
+    m_Duration:
+      m_Property:
+        rid: 3403086774196240385
+  m_Info:
+    m_Name:
+      m_Property:
+        rid: 3403086774196240386
+    m_Acronym:
+      m_Property:
+        rid: 3403086774196240783
+    m_Description:
+      m_Property:
+        rid: 3403086774196240784
+    m_Icon:
+      m_Property:
+        rid: 3403086774196240786
+    m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_OnStart:
+    m_Instructions:
+      m_Instructions:
+      - rid: 3403086774196240390
+  m_OnEnd:
+    m_Instructions:
+      m_Instructions:
+      - rid: 3403086774196240391
+  m_WhileActive:
+    m_Instructions:
+      m_Instructions:
+      - rid: 3403086774196240392
+  m_ID:
+    m_Save:
+      m_Save: 0
+    m_UniqueID:
+      m_SerializedID:
+        m_String: StatusEffect-SpiritSpear
+  references:
+    version: 2
+    RefIds:
+    - rid: 3403086774196240384
+      type: {class: GetDecimalInteger, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 3
+    - rid: 3403086774196240385
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 60
+    - rid: 3403086774196240386
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Spirit Spear
+    - rid: 3403086774196240390
+      type: {class: InstructionCommonDebugComment, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Text: Executed right after this Status Effect is applied
+    - rid: 3403086774196240391
+      type: {class: InstructionCommonDebugComment, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Text: Executed right after this Status Effect finishes
+    - rid: 3403086774196240392
+      type: {class: InstructionCommonDebugComment, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Text: Executed over and over again while this Status Effect lasts
+    - rid: 3403086774196240783
+      type: {class: GetStringEmpty, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086774196240784
+      type: {class: GetStringEmpty, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086774196240786
+      type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
