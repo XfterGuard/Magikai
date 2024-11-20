@@ -128,11 +128,21 @@ MonoBehaviour:
     m_Force:
       m_IsEnabled: 0
       m_Value: 10
+    m_Power:
+      m_Property:
+        rid: 3403086800177070614
   m_Projectile:
     m_Shot:
       m_Type:
         rid: 5512286406290702593
-    m_Impact: {fileID: 0}
+    m_ImpactSound: {fileID: 0}
+    m_ImpactEffect:
+      m_Property:
+        rid: 3403086800177070615
+      usePooling: 0
+      size: 5
+      hasDuration: 0
+      duration: 10
   m_Accuracy:
     m_MaxSpreadX:
       m_Property:
@@ -404,6 +414,12 @@ MonoBehaviour:
         m_ScopePosition: {x: 0, y: 0.25, z: 0}
         m_ScopeRotation: {x: 0, y: 0, z: 0}
         m_ScopeDistance: 0.25
+    - rid: 3403086800177070614
+      type: {class: GetDecimalConstantOne, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086800177070615
+      type: {class: GetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
     - rid: 5512286406290702452
       type: {class: GetDecimalConstantZero, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 

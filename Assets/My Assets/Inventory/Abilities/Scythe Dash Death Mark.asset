@@ -85,6 +85,9 @@ MonoBehaviour:
       m_Instructions:
         m_Instructions:
         - rid: 5512286481282236523
+        - rid: 3403086800177070292
+        - rid: 3403086800177070298
+        - rid: 3403086800177070302
         - rid: 5512286481282236454
     m_ExecuteFromParent: 0
   m_Crafting:
@@ -125,7 +128,85 @@ MonoBehaviour:
     - rid: 1004899907840246530
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: 9
+        m_Value: 1
+    - rid: 3403086800177070292
+      type: {class: InstructionGeometrySetVectorY, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Set:
+          m_Property:
+            rid: 3403086800177070297
+        m_Y:
+          m_Property:
+            rid: 3403086800177070294
+    - rid: 3403086800177070294
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1.2
+    - rid: 3403086800177070297
+      type: {class: SetVector3GlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: vector3
+          m_Variable: {fileID: 11400000, guid: 2574bcafc6d3a4a0c88f45a0dbb1c558, type: 2}
+          m_Name:
+            m_String: Arrow-Telegraph-Scale
+            m_ID: -1000847995
+    - rid: 3403086800177070298
+      type: {class: InstructionGeometrySetVectorZ, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Set:
+          m_Property:
+            rid: 3403086800177070301
+        m_Z:
+          m_Property:
+            rid: 3403086800177070300
+    - rid: 3403086800177070300
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 2.2
+    - rid: 3403086800177070301
+      type: {class: SetVector3GlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: vector3
+          m_Variable: {fileID: 11400000, guid: 2574bcafc6d3a4a0c88f45a0dbb1c558, type: 2}
+          m_Name:
+            m_String: Arrow-Telegraph-Scale
+            m_ID: -1000847995
+    - rid: 3403086800177070302
+      type: {class: InstructionGameObjectSetActive, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_GameObject:
+          m_Property:
+            rid: 3403086800177070305
+        m_Active:
+          m_Property:
+            rid: 3403086800177070304
+    - rid: 3403086800177070304
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 3403086800177070305
+      type: {class: GetGameObjectGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: game-object
+          m_Variable: {fileID: 11400000, guid: a0f86ef229713441bbebc64b0eb53d0d, type: 2}
+          m_Name:
+            m_String: Arrow-Telegraph
+            m_ID: 788256032
     - rid: 5512286481282236454
       type: {class: InstructionMeleeSkill, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:

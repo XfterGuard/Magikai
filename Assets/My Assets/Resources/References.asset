@@ -38,6 +38,21 @@ MonoBehaviour:
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Value: {fileID: 0}
+    - rid: 3403086800177070252
+      type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value:
+          rid: 3403086800177070254
+        m_Name:
+          m_String: Arrow-Telegraph
+    - rid: 3403086800177070254
+      type: {class: ValueGameObject, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value: {fileID: 0}
     - rid: 5512286252659376390
       type: {class: NameList, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:
@@ -50,6 +65,7 @@ MonoBehaviour:
         - rid: 5512286406290702611
         - rid: 5512286488322375794
         - rid: 3403086774196241141
+        - rid: 3403086800177070252
     - rid: 5512286252659376393
       type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:

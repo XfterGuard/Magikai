@@ -77,11 +77,15 @@ MonoBehaviour:
         - rid: 2830089318639075429
         - rid: 1004900087228268544
         - rid: 5512286252659376384
+        - rid: 5512286488322375833
         - rid: 1004899974586040500
-        - rid: 1004899972339466258
         - rid: 5512286485378237386
         - rid: 5512286485378237388
-        - rid: 5512286488322375833
+        - rid: 1004899972339466258
+        - rid: 3403086800177070213
+        - rid: 3403086800177070281
+        - rid: 3403086801434313599
+        - rid: 3403086804337033354
     - rid: 2830089318639075426
       type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:
@@ -127,6 +131,66 @@ MonoBehaviour:
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Value: 
+    - rid: 3403086800177070213
+      type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value:
+          rid: 3403086800177070215
+        m_Name:
+          m_String: Arrow-Telegraph-Scale
+    - rid: 3403086800177070215
+      type: {class: ValueVector3, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value: {x: 0, y: 0, z: 0}
+    - rid: 3403086800177070281
+      type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value:
+          rid: 3403086800177070282
+        m_Name:
+          m_String: Arrow-Telegraph-Pos
+    - rid: 3403086800177070282
+      type: {class: ValueVector3, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value: {x: 0, y: 0, z: 0}
+    - rid: 3403086801434313599
+      type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value:
+          rid: 3403086801434313601
+        m_Name:
+          m_String: DnP-Target-Log
+    - rid: 3403086801434313601
+      type: {class: ValueGameObject, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value: {fileID: 0}
+    - rid: 3403086804337033354
+      type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value:
+          rid: 3403086804337033356
+        m_Name:
+          m_String: True-Damage
+    - rid: 3403086804337033356
+      type: {class: ValueNumber, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value: 0
     - rid: 5512286252659376384
       type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:
