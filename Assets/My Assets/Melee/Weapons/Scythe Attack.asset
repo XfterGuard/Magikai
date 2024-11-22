@@ -281,7 +281,7 @@ MonoBehaviour:
         m_GameObject:
           m_Property:
             rid: 3403086803926516174
-          usePooling: 0
+          usePooling: 1
           size: 100
           hasDuration: 1
           duration: 2

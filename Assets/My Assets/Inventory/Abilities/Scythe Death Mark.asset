@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e25e7ff5b3ce840cd941cc265f0dfce0, type: 3}
-  m_Name: Spear Throw
+  m_Name: Scythe Death Mark
   m_EditorClassIdentifier: 
   m_ID:
     m_SerializedID:
-      m_String: Ability-SpearThrow
+      m_String: Ability-ScytheDeathMark
   m_Parent: {fileID: 11400000, guid: 40d5a4a2cb0274b5c99e0c14d9c3e72e, type: 2}
   m_Prefab: {fileID: 0}
   m_CanDrop:
@@ -84,8 +84,9 @@ MonoBehaviour:
     m_InstructionsOnUse:
       m_Instructions:
         m_Instructions:
-        - rid: 5512286488322375786
-        - rid: 3403086547383222508
+        - rid: 5512286481282236523
+        - rid: 3403086800177070302
+        - rid: 5512286481282236454
     m_ExecuteFromParent: 0
   m_Crafting:
     m_Ingredients: []
@@ -126,45 +127,71 @@ MonoBehaviour:
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: 1
-    - rid: 3403086547383222508
+    - rid: 3403086800177070302
+      type: {class: InstructionGameObjectSetActive, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_GameObject:
+          m_Property:
+            rid: 3403086800177070305
+        m_Active:
+          m_Property:
+            rid: 3403086800177070304
+    - rid: 3403086800177070304
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 3403086800177070305
+      type: {class: GetGameObjectGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: game-object
+          m_Variable: {fileID: 11400000, guid: a0f86ef229713441bbebc64b0eb53d0d, type: 2}
+          m_Name:
+            m_String: Arrow-Telegraph
+            m_ID: 788256032
+    - rid: 5512286481282236454
       type: {class: InstructionMeleeSkill, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Character:
           m_Property:
-            rid: 3403086547383222509
+            rid: 5512286481282236525
         m_Target:
           m_Property:
-            rid: 3403086547383222510
+            rid: 5512286481282236456
         m_Weapon:
           m_Property:
-            rid: 3403086547383222511
+            rid: 5512286481282236457
         m_Skill:
           m_Property:
-            rid: 3403086547383222512
-    - rid: 3403086547383222509
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data: 
-    - rid: 3403086547383222510
+            rid: 5512286481282236458
+    - rid: 5512286481282236456
       type: {class: GetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
-    - rid: 3403086547383222511
+    - rid: 5512286481282236457
       type: {class: GetWeaponMeleeInstance, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:
-        m_Weapon: {fileID: 11400000, guid: cff28707daf4f4ea5bfc7d4a6b55249f, type: 2}
-    - rid: 3403086547383222512
+        m_Weapon: {fileID: 11400000, guid: 39bf7c614d984470788a8aa1a08c20e8, type: 2}
+    - rid: 5512286481282236458
       type: {class: GetSkillInstance, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:
-        m_Skill: {fileID: 11400000, guid: 4b05b8c06f990425e9358e65ea59cf16, type: 2}
-    - rid: 5512286488322375786
+        m_Skill: {fileID: 11400000, guid: 7f2e3bce1924c4d8b9a6a2f53717ff8d, type: 2}
+    - rid: 5512286481282236523
       type: {class: InstructionMeleeTryCancel, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Character:
           m_Property:
-            rid: 5512286488322375789
-    - rid: 5512286488322375789
+            rid: 5512286481282236526
+    - rid: 5512286481282236525
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 5512286481282236526
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 

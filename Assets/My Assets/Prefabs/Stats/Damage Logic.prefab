@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7528917929610978916}
   - component: {fileID: 5861913613082586579}
   m_Layer: 0
-  m_Name: Damage
+  m_Name: Damage Logic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
             rid: 3403086801434313702
         m_Defense:
           m_Property:
-            rid: 3403086801434313703
+            rid: 3403086861385072756
         m_Result:
           m_Property:
             rid: 3403086801434313705
@@ -82,10 +82,6 @@ MonoBehaviour:
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: 1
-    - rid: 3403086801434313703
-      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Value: 0
     - rid: 3403086801434313705
       type: {class: SetNumberLocalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:
@@ -111,18 +107,10 @@ MonoBehaviour:
       data:
         m_MinValue:
           m_Property:
-            rid: 3403086801926619185
+            rid: 3403086861385072715
         m_MaxValue:
           m_Property:
-            rid: 3403086801926619192
-    - rid: 3403086801926619185
-      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Value: 5
-    - rid: 3403086801926619192
-      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Value: 15
+            rid: 3403086861385072718
     - rid: 3403086803926516264
       type: {class: InstructionArithmeticSetNumber, ns: GameCreator.Runtime.VisualScripting,
         asm: GameCreator.Runtime.Core}
@@ -200,6 +188,54 @@ MonoBehaviour:
       type: {class: GetDecimalInteger, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: 1
+    - rid: 3403086861385072715
+      type: {class: GetDecimalStatValue, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Traits:
+          m_Property:
+            rid: 3403086861385072716
+        m_Stat:
+          m_Property:
+            rid: 3403086861385072717
+    - rid: 3403086861385072716
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086861385072717
+      type: {class: GetStatInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Stat: {fileID: 11400000, guid: 77a172f01d1b74cdc962691b9908b62d, type: 2}
+    - rid: 3403086861385072718
+      type: {class: GetDecimalStatValue, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Traits:
+          m_Property:
+            rid: 3403086861385072719
+        m_Stat:
+          m_Property:
+            rid: 3403086861385072720
+    - rid: 3403086861385072719
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086861385072720
+      type: {class: GetStatInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Stat: {fileID: 11400000, guid: d399172ceaf204914ad6450d15cb5b2e, type: 2}
+    - rid: 3403086861385072756
+      type: {class: GetDecimalStatValue, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Traits:
+          m_Property:
+            rid: 3403086861385072757
+        m_Stat:
+          m_Property:
+            rid: 3403086861385072758
+    - rid: 3403086861385072757
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086861385072758
+      type: {class: GetStatInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Stat: {fileID: 11400000, guid: b2a162e0efe45460d915475015b3746f, type: 2}
 --- !u!114 &7528917929610978916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,6 +332,7 @@ MonoBehaviour:
           m_Instructions:
           - rid: 3403086804337033963
           - rid: 3403086804337033968
+          - rid: 3403086822672957853
           - rid: 3403086804337034147
           - rid: 3403086804337034043
     - rid: 3403086804337033946
@@ -460,7 +497,7 @@ MonoBehaviour:
             m_Property:
               rid: 3403086804337034028
         roundNumber: 0
-        hideMinus: 0
+        hideMinus: 1
         multiplyNumber: 0
         multiplyFactor: 1
         modifyText: 0
@@ -563,7 +600,7 @@ MonoBehaviour:
             m_Property:
               rid: 3403086804337034046
         roundNumber: 0
-        hideMinus: 0
+        hideMinus: 1
         multiplyNumber: 0
         multiplyFactor: 1
         modifyText: 0
@@ -775,3 +812,74 @@ MonoBehaviour:
     - rid: 3403086805447737397
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
+    - rid: 3403086822672957853
+      type: {class: InstructionArithmeticMultiplyNumbers, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Set:
+          m_Property:
+            rid: 3403086822672957866
+        m_Value1:
+          m_Property:
+            rid: 3403086822672957878
+        m_Value2:
+          m_Property:
+            rid: 3403086822672957890
+    - rid: 3403086822672957866
+      type: {class: SetNumberLocalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: number
+          m_Variable:
+            rid: 3403086822672957867
+          m_Name:
+            m_String: Damage
+            m_ID: 375673178
+    - rid: 3403086822672957867
+      type: {class: PropertyGetGameObject, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Property:
+          rid: 3403086822672957868
+    - rid: 3403086822672957868
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 3696805793370913004}
+    - rid: 3403086822672957878
+      type: {class: GetDecimalLocalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: number
+          m_Variable:
+            rid: 3403086822672957879
+          m_Name:
+            m_String: Damage
+            m_ID: 375673178
+    - rid: 3403086822672957879
+      type: {class: PropertyGetGameObject, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Property:
+          rid: 3403086822672957880
+    - rid: 3403086822672957880
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 3696805793370913004}
+    - rid: 3403086822672957890
+      type: {class: GetDecimalStatValue, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Traits:
+          m_Property:
+            rid: 3403086822672957891
+        m_Stat:
+          m_Property:
+            rid: 3403086822672957892
+    - rid: 3403086822672957891
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086822672957892
+      type: {class: GetStatInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Stat: {fileID: 11400000, guid: 1ebe047c1d7ca4b7bb524d42c27d4919, type: 2}

@@ -547,7 +547,7 @@ MonoBehaviour:
   enableOffsetFadeIn: 0
   offsetFadeIn: {x: 0.5, y: 0}
   enableScaleFadeIn: 1
-  scaleFadeIn: {x: 0, y: 0}
+  scaleFadeIn: {x: 4.5, y: 4.5}
   enableCrossScaleFadeIn: 0
   crossScaleFadeIn: {x: 1, y: 1.5}
   enableShakeFadeIn: 0
@@ -645,7 +645,7 @@ MonoBehaviour:
     fromNumber: 0
     toNumber: 1000
     fromScale: 1
-    toScale: 2
+    toScale: 4
   enableScaleOverTime: 1
   scaleOverTime:
     serializedVersion: 2
@@ -675,7 +675,7 @@ MonoBehaviour:
   defaultOrthographicSize: 5
   maxOrthographicSize: 1.5
   orthographicCamera: {fileID: 0}
-  spamGroup: Default
+  spamGroup: CritDnPMesh
   enableCombination: 0
   combinationSettings:
     method: 0

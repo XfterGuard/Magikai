@@ -127,6 +127,7 @@ MonoBehaviour:
   m_OnHit:
     m_Instructions:
       m_Instructions:
+      - rid: 3403086822672958320
       - rid: 3403086774196240639
       - rid: 3403086774196240643
   <EditorModelPath>k__BackingField: Assets/My Assets/Prefabs/Bodies/Player Body.prefab
@@ -184,6 +185,144 @@ MonoBehaviour:
     - rid: 3403086774196240671
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
+    - rid: 3403086822672958111
+      type: {class: ClipDefault, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Time: 0
+        m_Duration: 0
+        m_Instructions:
+          m_Instructions:
+            m_Instructions:
+            - rid: 3403086822672958112
+    - rid: 3403086822672958112
+      type: {class: InstructionCharacterPropertyAngularSpeed, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Character:
+          m_Property:
+            rid: 3403086822672958113
+        m_AngularSpeed:
+          m_Operation: 0
+          m_Value:
+            m_Property:
+              rid: 3403086822672958114
+        m_Transition:
+          m_Duration: 0
+          m_Easing: 3
+          m_Time: 0
+          m_WaitToComplete: 1
+    - rid: 3403086822672958113
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086822672958114
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0
+    - rid: 3403086822672958115
+      type: {class: InstructionCharacterPropertyAngularSpeed, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Character:
+          m_Property:
+            rid: 3403086822672958116
+        m_AngularSpeed:
+          m_Operation: 0
+          m_Value:
+            m_Property:
+              rid: 3403086822672958117
+        m_Transition:
+          m_Duration: 0
+          m_Easing: 3
+          m_Time: 0
+          m_WaitToComplete: 1
+    - rid: 3403086822672958116
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086822672958117
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 5000
+    - rid: 3403086822672958320
+      type: {class: InstructionGameObjectInstantiate, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_GameObject:
+          m_Property:
+            rid: 3403086822672958321
+          usePooling: 1
+          size: 100
+          hasDuration: 1
+          duration: 2
+        m_Position:
+          m_Property:
+            rid: 3403086822672958322
+        m_Rotation:
+          m_Property:
+            rid: 3403086822672958323
+        m_Parent:
+          m_Property:
+            rid: 3403086822672958324
+        m_Save:
+          m_Property:
+            rid: 3403086822672958325
+    - rid: 3403086822672958321
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 3696805793370913004, guid: e31228c5a2cfc45dc8470e389c397ab1,
+          type: 3}
+    - rid: 3403086822672958322
+      type: {class: GetPositionTarget, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086822672958323
+      type: {class: GetRotationIdentity, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086822672958324
+      type: {class: GetGameObjectTarget, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086822672958325
+      type: {class: SetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3403086861385072812
+      type: {class: ClipDefault, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Time: 0.16
+        m_Duration: 0
+        m_Instructions:
+          m_Instructions:
+            m_Instructions:
+            - rid: 3403086861385072813
+    - rid: 3403086861385072813
+      type: {class: InstructionGameObjectSetActive, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_GameObject:
+          m_Property:
+            rid: 3403086861385072814
+        m_Active:
+          m_Property:
+            rid: 3403086861385072815
+    - rid: 3403086861385072814
+      type: {class: GetGameObjectGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: game-object
+          m_Variable: {fileID: 11400000, guid: a0f86ef229713441bbebc64b0eb53d0d, type: 2}
+          m_Name:
+            m_String: Arrow-Telegraph
+            m_ID: 788256032
+    - rid: 3403086861385072815
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0
     - rid: 5512286487810933646
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
@@ -252,6 +391,8 @@ MonoBehaviour:
         m_Clips:
         - rid: 5512286488322375759
         - rid: 5512286488322375803
+        - rid: 3403086822672958111
+        - rid: 3403086861385072812
     - rid: 5512286487810933663
       type: {class: GetDecimalConstantOne, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
@@ -399,13 +540,14 @@ MonoBehaviour:
     - rid: 5512286488322375803
       type: {class: ClipDefault, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
-        m_Time: 0.5
+        m_Time: 0.54
         m_Duration: 0
         m_Instructions:
           m_Instructions:
             m_Instructions:
             - rid: 5512286488322375804
             - rid: 5512286488322375830
+            - rid: 3403086822672958115
     - rid: 5512286488322375804
       type: {class: InstructionCharacterNavigationMoveStop, ns: GameCreator.Runtime.VisualScripting,
         asm: GameCreator.Runtime.Core}

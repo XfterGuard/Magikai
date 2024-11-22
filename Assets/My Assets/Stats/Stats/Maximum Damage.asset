@@ -13,39 +13,39 @@ MonoBehaviour:
   m_Name: Maximum Damage
   m_EditorClassIdentifier: 
   m_ID:
-    m_String: Max-Damage
+    m_String: MaxDmg
   m_Data:
-    m_Base: 15
+    m_Base: 50
     m_Formula: {fileID: 0}
   m_Info:
     m_Name:
       m_Property:
-        rid: 1004900087228268583
+        rid: 3403086861385072700
     m_Acronym:
       m_Property:
-        rid: 1004900087228268584
+        rid: 3403086861385072701
     m_Description:
       m_Property:
-        rid: 1004900087228268585
+        rid: 3403086861385072702
     m_Icon:
       m_Property:
-        rid: 1004900087228268586
+        rid: 3403086861385072703
     m_Color: {r: 1, g: 1, b: 1, a: 1}
   references:
     version: 2
     RefIds:
-    - rid: 1004900087228268583
+    - rid: 3403086861385072700
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: Stat Name
-    - rid: 1004900087228268584
+    - rid: 3403086861385072701
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: STA
-    - rid: 1004900087228268585
+    - rid: 3403086861385072702
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: Description...
-    - rid: 1004900087228268586
+    - rid: 3403086861385072703
       type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 

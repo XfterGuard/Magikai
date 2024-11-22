@@ -10,42 +10,42 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c4be981628d4fcd80364b5052329739, type: 3}
-  m_Name: Minimum Damage
+  m_Name: Defense
   m_EditorClassIdentifier: 
   m_ID:
-    m_String: MinDmg
+    m_String: Defense
   m_Data:
-    m_Base: 35
+    m_Base: 0
     m_Formula: {fileID: 0}
   m_Info:
     m_Name:
       m_Property:
-        rid: 3403086861385072700
+        rid: 3403086861385072727
     m_Acronym:
       m_Property:
-        rid: 3403086861385072701
+        rid: 3403086861385072728
     m_Description:
       m_Property:
-        rid: 3403086861385072702
+        rid: 3403086861385072729
     m_Icon:
       m_Property:
-        rid: 3403086861385072703
+        rid: 3403086861385072730
     m_Color: {r: 1, g: 1, b: 1, a: 1}
   references:
     version: 2
     RefIds:
-    - rid: 3403086861385072700
+    - rid: 3403086861385072727
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: Stat Name
-    - rid: 3403086861385072701
+    - rid: 3403086861385072728
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: STA
-    - rid: 3403086861385072702
+    - rid: 3403086861385072729
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: Description...
-    - rid: 3403086861385072703
+    - rid: 3403086861385072730
       type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 

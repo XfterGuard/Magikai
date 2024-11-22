@@ -82,8 +82,6 @@ MonoBehaviour:
         - rid: 5512286485378237386
         - rid: 5512286485378237388
         - rid: 1004899972339466258
-        - rid: 3403086800177070213
-        - rid: 3403086800177070281
         - rid: 3403086801434313599
         - rid: 3403086804337033354
     - rid: 2830089318639075426
@@ -131,36 +129,6 @@ MonoBehaviour:
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Value: 
-    - rid: 3403086800177070213
-      type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Value:
-          rid: 3403086800177070215
-        m_Name:
-          m_String: Arrow-Telegraph-Scale
-    - rid: 3403086800177070215
-      type: {class: ValueVector3, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Value: {x: 0, y: 0, z: 0}
-    - rid: 3403086800177070281
-      type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Value:
-          rid: 3403086800177070282
-        m_Name:
-          m_String: Arrow-Telegraph-Pos
-    - rid: 3403086800177070282
-      type: {class: ValueVector3, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Value: {x: 0, y: 0, z: 0}
     - rid: 3403086801434313599
       type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:

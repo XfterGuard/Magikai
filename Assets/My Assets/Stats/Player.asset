@@ -34,12 +34,14 @@ MonoBehaviour:
     - rid: 1004899929286770940
     - rid: 1004899929286770937
     - rid: 1004899929286770938
-    - rid: 1004900087228268596
-    - rid: 1004900087228268595
     - rid: 1004900087228268581
     - rid: 1004900087228268582
     - rid: 5512286252659376368
     - rid: 3403086803926516218
+    - rid: 3403086822672957911
+    - rid: 3403086861385072731
+    - rid: 3403086861385072732
+    - rid: 3403086861385072733
   references:
     version: 2
     RefIds:
@@ -155,32 +157,6 @@ MonoBehaviour:
         m_ChangeFormula:
           m_IsEnabled: 0
           m_Value: {fileID: 0}
-    - rid: 1004900087228268595
-      type: {class: StatItem, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_IsHidden: 0
-        m_Stat: {fileID: 11400000, guid: 8af9756563e48400aa4f97cbe25d0d7b, type: 2}
-        m_ChangeBase:
-          m_IsEnabled: 0
-          m_Value: 100
-        m_ChangeFormula:
-          m_IsEnabled: 0
-          m_Value: {fileID: 0}
-    - rid: 1004900087228268596
-      type: {class: StatItem, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_IsHidden: 0
-        m_Stat: {fileID: 11400000, guid: 88d275042b79b426e9705e73e15fe21d, type: 2}
-        m_ChangeBase:
-          m_IsEnabled: 0
-          m_Value: 100
-        m_ChangeFormula:
-          m_IsEnabled: 0
-          m_Value: {fileID: 0}
     - rid: 3403086803926516218
       type: {class: StatItem, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
       data:
@@ -188,6 +164,58 @@ MonoBehaviour:
         m_IsEnabled: 1
         m_IsHidden: 0
         m_Stat: {fileID: 11400000, guid: b5692625c2b014506b67b9a9be1ef515, type: 2}
+        m_ChangeBase:
+          m_IsEnabled: 0
+          m_Value: 100
+        m_ChangeFormula:
+          m_IsEnabled: 0
+          m_Value: {fileID: 0}
+    - rid: 3403086822672957911
+      type: {class: StatItem, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_IsHidden: 0
+        m_Stat: {fileID: 11400000, guid: 1ebe047c1d7ca4b7bb524d42c27d4919, type: 2}
+        m_ChangeBase:
+          m_IsEnabled: 0
+          m_Value: 100
+        m_ChangeFormula:
+          m_IsEnabled: 0
+          m_Value: {fileID: 0}
+    - rid: 3403086861385072731
+      type: {class: StatItem, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_IsHidden: 0
+        m_Stat: {fileID: 11400000, guid: 77a172f01d1b74cdc962691b9908b62d, type: 2}
+        m_ChangeBase:
+          m_IsEnabled: 0
+          m_Value: 100
+        m_ChangeFormula:
+          m_IsEnabled: 0
+          m_Value: {fileID: 0}
+    - rid: 3403086861385072732
+      type: {class: StatItem, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_IsHidden: 0
+        m_Stat: {fileID: 11400000, guid: d399172ceaf204914ad6450d15cb5b2e, type: 2}
+        m_ChangeBase:
+          m_IsEnabled: 0
+          m_Value: 100
+        m_ChangeFormula:
+          m_IsEnabled: 0
+          m_Value: {fileID: 0}
+    - rid: 3403086861385072733
+      type: {class: StatItem, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_IsHidden: 0
+        m_Stat: {fileID: 11400000, guid: b2a162e0efe45460d915475015b3746f, type: 2}
         m_ChangeBase:
           m_IsEnabled: 0
           m_Value: 100
