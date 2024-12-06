@@ -62,7 +62,7 @@ MonoBehaviour:
     - rid: 5512286464049414605
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: 3
+        m_Value: 5
     - rid: 5512286464049414606
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:

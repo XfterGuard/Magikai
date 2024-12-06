@@ -201,7 +201,6 @@ MonoBehaviour:
         - rid: 3403086577900453920
         - rid: 3403086577900453932
         - rid: 3403086774196240509
-        - rid: 3403086861780910581
         - rid: 3403086861780910785
         - rid: 3403086861780910790
     - rid: 1004899974586040433
@@ -272,6 +271,24 @@ MonoBehaviour:
       data:
         m_Time: 0.25714287
         m_Duration: 0.37142858
+    - rid: 1045524643926245664
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 1045524643926245665
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 1045524643926245666
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 1045524643926245667
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 1045524643926245668
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 1045524643926245669
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
     - rid: 3403086577900453919
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
@@ -294,7 +311,7 @@ MonoBehaviour:
         m_IsEnabled: 1
         m_Character:
           m_Property:
-            rid: 3403086577900453925
+            rid: 1045524643926245665
         m_Speed:
           m_Operation: 0
           m_Value:
@@ -305,9 +322,6 @@ MonoBehaviour:
           m_Easing: 3
           m_Time: 0
           m_WaitToComplete: 1
-    - rid: 3403086577900453925
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data: 
     - rid: 3403086577900453926
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
@@ -320,7 +334,7 @@ MonoBehaviour:
         m_IsEnabled: 1
         m_Character:
           m_Property:
-            rid: 3403086577900453928
+            rid: 1045524643926245666
         m_Location:
           m_Property:
             rid: 3403086577900453929
@@ -332,9 +346,6 @@ MonoBehaviour:
           m_CancelOnFail: 1
           m_OnFail:
             m_Instructions: []
-    - rid: 3403086577900453928
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data: 
     - rid: 3403086577900453929
       type: {class: GetLocationNavigationMarker, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
@@ -372,7 +383,7 @@ MonoBehaviour:
         m_IsEnabled: 1
         m_Character:
           m_Property:
-            rid: 3403086577900453934
+            rid: 1045524643926245667
         m_Speed:
           m_Operation: 0
           m_Value:
@@ -383,9 +394,6 @@ MonoBehaviour:
           m_Easing: 3
           m_Time: 0
           m_WaitToComplete: 1
-    - rid: 3403086577900453934
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data: 
     - rid: 3403086577900453935
       type: {class: GetDecimalGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:
@@ -404,13 +412,10 @@ MonoBehaviour:
         m_IsEnabled: 1
         m_Character:
           m_Property:
-            rid: 3403086577900453937
+            rid: 1045524643926245668
         m_Priority:
           m_Property:
             rid: 3403086577900453938
-    - rid: 3403086577900453937
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data: 
     - rid: 3403086577900453938
       type: {class: GetDecimalInteger, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
@@ -486,41 +491,6 @@ MonoBehaviour:
     - rid: 3403086822672958331
       type: {class: SetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
-    - rid: 3403086861780910581
-      type: {class: ClipDefault, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_Time: 0.114285715
-        m_Duration: 0
-        m_Instructions:
-          m_Instructions:
-            m_Instructions:
-            - rid: 3403086861780910582
-    - rid: 3403086861780910582
-      type: {class: InstructionGameObjectSetActive, ns: GameCreator.Runtime.VisualScripting,
-        asm: GameCreator.Runtime.Core}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_GameObject:
-          m_Property:
-            rid: 3403086861780910583
-        m_Active:
-          m_Property:
-            rid: 3403086861780910584
-    - rid: 3403086861780910583
-      type: {class: GetGameObjectGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
-      data:
-        m_Variable:
-          m_TypeID:
-            m_String: game-object
-          m_Variable: {fileID: 11400000, guid: a0f86ef229713441bbebc64b0eb53d0d, type: 2}
-          m_Name:
-            m_String: SmallArrow-Telegraph
-            m_ID: -1597366767
-    - rid: 3403086861780910584
-      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Value: 0
     - rid: 3403086861780910785
       type: {class: ClipDefault, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
@@ -538,7 +508,7 @@ MonoBehaviour:
         m_IsEnabled: 1
         m_Character:
           m_Property:
-            rid: 3403086861780910787
+            rid: 1045524643926245664
         m_AngularSpeed:
           m_Operation: 0
           m_Value:
@@ -549,9 +519,6 @@ MonoBehaviour:
           m_Easing: 3
           m_Time: 0
           m_WaitToComplete: 1
-    - rid: 3403086861780910787
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data: 
     - rid: 3403086861780910788
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
@@ -573,7 +540,7 @@ MonoBehaviour:
         m_IsEnabled: 1
         m_Character:
           m_Property:
-            rid: 3403086861780910792
+            rid: 1045524643926245669
         m_AngularSpeed:
           m_Operation: 0
           m_Value:
@@ -584,9 +551,6 @@ MonoBehaviour:
           m_Easing: 3
           m_Time: 0
           m_WaitToComplete: 1
-    - rid: 3403086861780910792
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data: 
     - rid: 3403086861780910793
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:

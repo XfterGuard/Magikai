@@ -132,8 +132,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
     - rid: 1004899974586040413
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
@@ -199,9 +197,7 @@ MonoBehaviour:
     - rid: 1004899974586040429
       type: {class: TrackDefault, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
-        m_Clips:
-        - rid: 5512286572266914216
-        - rid: 3403086591879021320
+        m_Clips: []
     - rid: 1004899974586040430
       type: {class: GetDecimalConstantOne, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
@@ -273,34 +269,6 @@ MonoBehaviour:
       data:
         m_Time: 0.25714287
         m_Duration: 0.37142858
-    - rid: 3403086591879021320
-      type: {class: ClipDefault, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_Time: 0.42857143
-        m_Duration: 0
-        m_Instructions:
-          m_Instructions:
-            m_Instructions:
-            - rid: 3403086591879021321
-    - rid: 3403086591879021321
-      type: {class: InstructionParticleSystemStopParticleSystem, ns: GameCreator.Runtime.VisualScripting.TwoCateCode,
-        asm: Assembly-CSharp-firstpass}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_GameObject:
-          m_Property:
-            rid: 3403086591879021323
-    - rid: 3403086591879021323
-      type: {class: GetGameObjectGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
-      data:
-        m_Variable:
-          m_TypeID:
-            m_String: game-object
-          m_Variable: {fileID: 11400000, guid: 0135fe75e8d064335901bc2f3ebcf248, type: 2}
-          m_Name:
-            m_String: SpearVFX
-            m_ID: -1004785629
     - rid: 3403086822672958332
       type: {class: InstructionGameObjectInstantiate, ns: GameCreator.Runtime.VisualScripting,
         asm: GameCreator.Runtime.Core}
@@ -343,31 +311,3 @@ MonoBehaviour:
     - rid: 3403086822672958337
       type: {class: SetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
-    - rid: 5512286572266914216
-      type: {class: ClipDefault, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_Time: 0.2
-        m_Duration: 0
-        m_Instructions:
-          m_Instructions:
-            m_Instructions:
-            - rid: 5512286752088785725
-    - rid: 5512286752088785725
-      type: {class: InstructionParticleSystemStartParticleSystem, ns: GameCreator.Runtime.VisualScripting.TwoCateCode,
-        asm: Assembly-CSharp-firstpass}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_GameObject:
-          m_Property:
-            rid: 5512286752088785727
-    - rid: 5512286752088785727
-      type: {class: GetGameObjectGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
-      data:
-        m_Variable:
-          m_TypeID:
-            m_String: game-object
-          m_Variable: {fileID: 11400000, guid: 0135fe75e8d064335901bc2f3ebcf248, type: 2}
-          m_Name:
-            m_String: SpearVFX
-            m_ID: -1004785629

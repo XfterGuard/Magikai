@@ -72,9 +72,9 @@ MonoBehaviour:
         - rid: 5512286570983981191
         - rid: 5512286570983981194
         - rid: 5512286252368920688
+        - rid: 5512286570983981188
         - rid: 5512286252659376328
         - rid: 5512286570983981185
-        - rid: 5512286570983981188
         - rid: 5512286225237279352
         - rid: 1004899971562733757
         - rid: 5512286570983981303
@@ -99,16 +99,16 @@ MonoBehaviour:
       m_Instructions:
         m_Instructions:
         - rid: 5512286225237279163
-        - rid: 5512286252368920683
-        - rid: 5512286570983981197
         - rid: 5512286570983981200
+        - rid: 5512286570983981197
         - rid: 5512286252368920685
-        - rid: 5512286252659376331
         - rid: 5512286570983981203
+        - rid: 5512286252659376331
         - rid: 5512286570983981206
         - rid: 5512286225237279334
         - rid: 5512286225237279167
         - rid: 5512286570983981298
+        - rid: 1045524644081697315
     m_ExecuteFromParent: 0
   m_Crafting:
     m_Ingredients: []
@@ -189,6 +189,26 @@ MonoBehaviour:
     - rid: 1004899971562733765
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
+    - rid: 1045524644081697315
+      type: {class: InstructionLogicRunActions, ns: GameCreator.Runtime.VisualScripting,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Actions:
+          m_Property:
+            rid: 1045524644081697316
+        m_WaitToFinish: 0
+    - rid: 1045524644081697316
+      type: {class: GetGameObjectGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: game-object
+          m_Variable: {fileID: 11400000, guid: a0f86ef229713441bbebc64b0eb53d0d, type: 2}
+          m_Name:
+            m_String: Inactive-All-Special-Inputs
+            m_ID: 29442665
     - rid: 5512286225237279163
       type: {class: InstructionLogicRunActions, ns: GameCreator.Runtime.VisualScripting,
         asm: GameCreator.Runtime.Core}
@@ -367,26 +387,6 @@ MonoBehaviour:
           m_Name:
             m_String: Inactive-All-Weapon-Models
             m_ID: 1125964630
-    - rid: 5512286252368920683
-      type: {class: InstructionLogicRunActions, ns: GameCreator.Runtime.VisualScripting,
-        asm: GameCreator.Runtime.Core}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Actions:
-          m_Property:
-            rid: 5512286252368920684
-        m_WaitToFinish: 1
-    - rid: 5512286252368920684
-      type: {class: GetGameObjectGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
-      data:
-        m_Variable:
-          m_TypeID:
-            m_String: game-object
-          m_Variable: {fileID: 11400000, guid: a0f86ef229713441bbebc64b0eb53d0d, type: 2}
-          m_Name:
-            m_String: UnEquip-Weapon-Abilities
-            m_ID: -1156370382
     - rid: 5512286252368920685
       type: {class: InstructionInventoryEquipItem, ns: GameCreator.Runtime.Inventory,
         asm: GameCreator.Runtime.Inventory}
@@ -525,8 +525,8 @@ MonoBehaviour:
             m_String: item
           m_Variable: {fileID: 11400000, guid: 2574bcafc6d3a4a0c88f45a0dbb1c558, type: 2}
           m_Name:
-            m_String: Current-Ability-Equipped-A
-            m_ID: 1623507442
+            m_String: Current-Ability-Equipped-B
+            m_ID: -103968696
     - rid: 5512286570983981187
       type: {class: GetItemInstance, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
       data:
@@ -551,8 +551,8 @@ MonoBehaviour:
             m_String: item
           m_Variable: {fileID: 11400000, guid: 2574bcafc6d3a4a0c88f45a0dbb1c558, type: 2}
           m_Name:
-            m_String: Current-Ability-Equipped-B
-            m_ID: -103968696
+            m_String: Current-Ability-Equipped-A
+            m_ID: 1623507442
     - rid: 5512286570983981190
       type: {class: GetItemInstance, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
       data:
@@ -703,8 +703,8 @@ MonoBehaviour:
             m_String: item
           m_Variable: {fileID: 11400000, guid: 2574bcafc6d3a4a0c88f45a0dbb1c558, type: 2}
           m_Name:
-            m_String: Current-Ability-Equipped-A
-            m_ID: 1623507442
+            m_String: Current-Ability-Equipped-B
+            m_ID: -103968696
     - rid: 5512286570983981208
       type: {class: GetItemInstance, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
       data:

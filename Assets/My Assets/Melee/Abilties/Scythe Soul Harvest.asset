@@ -70,7 +70,7 @@ MonoBehaviour:
     m_HitEffect:
       m_Property:
         rid: 5512286480555573706
-    m_HitPause: 1
+    m_HitPause: 0
     m_HitPauseTimeScale: 0.05
     m_HitPauseDelay: 0.1
     m_HitPauseDuration: 0.1
@@ -134,6 +134,9 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 1045524643926245656
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
     - rid: 5512286480555573696
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
@@ -345,13 +348,10 @@ MonoBehaviour:
       data:
         m_From:
           m_Property:
-            rid: 5512286481282236777
+            rid: 1045524643926245656
         m_Point:
           m_Property:
             rid: 5512286481282236778
-    - rid: 5512286481282236777
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data: 
     - rid: 5512286481282236778
       type: {class: GetPositionVector3, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:

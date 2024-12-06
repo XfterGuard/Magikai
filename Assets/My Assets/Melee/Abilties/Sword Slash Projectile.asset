@@ -131,6 +131,11 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 1045524604852371891
+      type: {class: ClipMeleePhases, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
+      data:
+        m_Time: 0.125
+        m_Duration: 0.375
     - rid: 5512286568382201997
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
@@ -171,12 +176,12 @@ MonoBehaviour:
     - rid: 5512286568382202008
       type: {class: TrackMeleePhases, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:
-        m_Clips: []
+        m_Clips:
+        - rid: 1045524604852371891
     - rid: 5512286568382202009
       type: {class: TrackMeleeCancel, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:
-        m_Clips:
-        - rid: 5512286568382202021
+        m_Clips: []
     - rid: 5512286568382202010
       type: {class: TrackMeleeRootMotionPosition, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:
@@ -209,11 +214,6 @@ MonoBehaviour:
     - rid: 5512286568382202019
       type: {class: GetDecimalConstantOne, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
-    - rid: 5512286568382202021
-      type: {class: ClipMeleeCancel, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
-      data:
-        m_Time: 0
-        m_Duration: 1
     - rid: 5512286568382202022
       type: {class: ClipMeleeRootMotionPosition, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:

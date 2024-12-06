@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6342bb171060c40a2b440c5490ff6478
+guid: 16a2b2f3f42114155935b074e06e3c72
 ScriptedImporter:
   fileIDToRecycleName:
     4800000: MainAsset
@@ -10,8 +10,8 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
 AssetOrigin:
   serializedVersion: 1
-  productId: 133704
-  packageName: RPG VFX Bundle
-  packageVersion: 5.1.0
+  productId: 157764
+  packageName: Support package for Hovl Studio assets
+  packageVersion: 3.15
   assetPath: Assets/Marketplace Assets/Hovl Studio/HSFiles/Shaders/Shader Graph/HS_Distortion.shadergraph
-  uploadId: 707191
+  uploadId: 714385

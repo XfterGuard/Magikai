@@ -182,3 +182,15 @@ MonoBehaviour:
         m_LocalPosition: {x: 0, y: 0, z: 0}
         m_LocalRotation: {x: 0, y: 0, z: 0}
         m_Handle: {fileID: 0}
+    - m_Breakpoint: 0
+      m_IsEnabled: 0
+      m_Base: {fileID: 11400000, guid: fbc0ab6a1593c4cc7ae369e0aa802733, type: 2}
+      m_Handle:
+        m_Type: 0
+        m_Bone:
+          m_Type: 0
+          m_Human: 0
+          m_Path: 
+        m_LocalPosition: {x: 0, y: 0, z: 0}
+        m_LocalRotation: {x: 0, y: 0, z: 0}
+        m_Handle: {fileID: 0}
